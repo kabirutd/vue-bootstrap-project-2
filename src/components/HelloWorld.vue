@@ -1,6 +1,42 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
+  <div class="container-fluid">
+    <!--<h1>{{ msg }} - Jamais</h1>-->
+<br/>
+<b-jumbotron>
+  <template slot="header">
+    Bootstrap Vue
+  </template>
+  <template slot="lead">
+    This is a simple hero unit, a simple jumbotron-style component for
+    calling extra attention to featured content or information.
+  </template>
+  <hr class="my-4">
+  <p>
+    It uses utility classes for typography and spacing to space content
+    out within the larger container.
+  </p>
+  <b-btn variant="primary" href="#">Do Something</b-btn>
+  <b-btn variant="success" href="#">Do Something Else</b-btn>
+</b-jumbotron>
+  <!--<b-jumbotron bg-variant="info" text-variant="white" border-variant="dark">-->
+  <!--
+    <template slot="header">
+      Bootstrap Vue
+    </template>
+    <template slot="lead">
+      This is a simple hero unit, a simple jumbotron-style component for
+      calling extra attention to featured content or information.
+    </template>
+    <hr class="my-4">
+    <p>
+      It uses utility classes for typography and spacing to space content
+      out within the larger container.
+    </p>
+  </b-jumbotron>
+  -->
+
+
+    <b-alert show>Default Alert</b-alert>
     <p>
       For a guide and recipes on how to configure / customize this project,<br>
       check out the
