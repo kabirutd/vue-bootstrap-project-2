@@ -88,6 +88,24 @@
         <b-nav-item-dropdown class="routerLink" text="VUE EXAMPLES" >
 
             <b-dropdown-item >
+                <router-link class="routerLink"  to="/getblogposts">
+                HTTP GET EXAMPLE USING AXIOS
+                </router-link>
+            </b-dropdown-item>
+
+             <b-dropdown-item >
+                <router-link class="routerLink"  to="/httppost">
+                HTTP POST EXAMPLE
+                </router-link>
+            </b-dropdown-item>
+
+             <b-dropdown-item >
+                <router-link class="routerLink"  to="/dynamicform">
+                DYNAMIC FORM USING SLOT
+                </router-link>
+            </b-dropdown-item>
+
+            <b-dropdown-item >
                 <router-link class="routerLink"  to="/dynamiccomponent">
                 DYNAMIC COMPONENT
                 </router-link>

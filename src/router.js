@@ -19,6 +19,9 @@ import Array from './components/Array.vue'
 import Multiselect from './components/Multiselect.vue'
 import FormValidation from './components/FormValidation.vue'
 import DynamicComponent from './components/dynamicComponent.vue'
+import DynamicForm from '@/views/dynamicForm.vue'
+import HttpPost from '@/views/httpPost.vue'
+import GetBlogPosts from '@/views/getBlogPosts.vue'
 
 
 Vue.use(Router)
@@ -32,12 +35,28 @@ export default new Router({
       name: 'Home',
       component: Home
     },
+
+    {
+      path: '/httppost',
+      name: 'http-post',
+      component: HttpPost
+    },
+
+    {
+      path: '/getblogposts',
+      name: 'get-blog-posts',
+      component: GetBlogPosts
+    },
     {
       path: '/dynamiccomponent',
       name: 'dynamic-component',
       component: DynamicComponent
     },
-
+    {
+      path: '/dynamicform',
+      name: 'dynamic-form',
+      component: DynamicForm
+    },
     {
       path: '/Array',
       name: 'Array',

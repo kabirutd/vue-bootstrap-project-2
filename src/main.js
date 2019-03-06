@@ -9,8 +9,18 @@ import VeeValidate from 'vee-validate'
 
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+import VueResource from 'vue-resource'
 
-Vue.use(BootstrapVue,router,axios,VueAxios,VeeValidate);
+Vue.use(BootstrapVue,router,axios,VueAxios,VeeValidate,VueResource);
+
+// Filters
+Vue.filter('to-uppercase', function(value){
+  return value.toUpperCase();
+});
+
+Vue.filter('snippet', function(value){
+  return value.slice(0,100) + '....';
+});
 
 Vue.config.productionTip = false
 
@@ -21,5 +31,6 @@ new Vue({
   axios,
   VueAxios,
   VeeValidate,
+  VueResource,
   render: h => h(App),
 }).$mount('#app')
