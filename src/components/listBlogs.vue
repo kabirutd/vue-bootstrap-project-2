@@ -4,7 +4,7 @@
 
     <b-card
       title
-      header="FETCH DATA FROM AN API USING AXIOS"
+      header="FETCH DATA FROM AN API USING AXIOS AND RENDER USING MIXINS"
       img-alt="Image"
       img-top
       tag="article"
@@ -12,8 +12,8 @@
       class="mb-2"
     >
       <p class="card-text">
-        This is a sample page that is using axios to fetch data from http://jsonplaceholder.typicode.com/posts along with 
-        vue filters such as to-uppercase, array.match
+        This is a sample page that is using axios to fetch data from http://jsonplaceholder.typicode.com/posts along 
+        with rendering data using mixins.
       </p>
       <!--<b-button href="#" variant="primary">Go somewhere</b-button>-->
     </b-card>
@@ -35,11 +35,11 @@
       <div v-if="loading">Loading contacts...</div>
 
       <div v-theme:column="'wide'" id="show-blogs">
-        <h1>All Blog Articles</h1>
+        <h1>List Blogs</h1>
         <input type="text" v-model="search" placeholder="Search Blog" />
         <div v-for="(blog, index)  in filteredBlogs" :key="index" class="single-blog">
           <h2 v-rainbow>{{ blog.title | to-uppercase  }}</h2>
-          <article>{{ blog.body | snippet }}</article>
+         
         </div>
       </div>
     </section>
@@ -51,7 +51,6 @@
 import axios from "axios";
 
 import searchMixin from '@/mixins/searchMixin'
-
 // Filters
 /*
 Vue.filter('to-uppercase', function(value){
@@ -63,9 +62,9 @@ Vue.filter('to-uppercase', function(value){
 export default {
   name: "Blogs",
 
-  components: {
+  components:{
 
-    'search-mixin': searchMixin
+      //'search-mixin' : searchMixin
 
   },
 
@@ -120,10 +119,10 @@ export default {
       }
 
       //}
-  },
+  }
   */
 
-  mixins: [searchMixin]
+ mixins: [searchMixin]
 };
 </script>
 

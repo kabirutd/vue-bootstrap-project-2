@@ -22,7 +22,7 @@ import DynamicComponent from './components/dynamicComponent.vue'
 import DynamicForm from '@/views/dynamicForm.vue'
 import HttpPost from '@/views/httpPost.vue'
 import GetBlogPosts from '@/views/getBlogPosts.vue'
-
+import listBlogs from '@/components/listBlogs.vue'
 
 Vue.use(Router)
 
@@ -40,6 +40,12 @@ export default new Router({
       path: '/httppost',
       name: 'http-post',
       component: HttpPost
+    },
+
+    {
+      path: '/listblogs',
+      name: 'list-blogs',
+      component: listBlogs
     },
 
     {

@@ -29,6 +29,10 @@
       <span tabindex="0">Blur to see changes</span>
       <tree-view :data="$v.age" :options="{rootObjectKey: '$v.age', maxDepth: 2}"></tree-view>
 
+      
+      
+
+
       <!--
       <div class="form-group" :class="{ 'form-group--error': $v.name.$error }">
         <label class="form__label">Name</label>

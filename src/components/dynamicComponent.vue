@@ -7,7 +7,6 @@
 <keep-alive>
 <component v-bind:is="selectedComponent">
 
-
 </component>
 </keep-alive>
 

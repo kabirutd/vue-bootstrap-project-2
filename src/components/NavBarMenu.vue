@@ -88,6 +88,12 @@
         <b-nav-item-dropdown class="routerLink" text="VUE EXAMPLES" >
 
             <b-dropdown-item >
+                <router-link class="routerLink"  to="/listblogs">
+                LIST BLOGS USING MIXINS
+                </router-link>
+            </b-dropdown-item>
+
+            <b-dropdown-item >
                 <router-link class="routerLink"  to="/getblogposts">
                 HTTP GET EXAMPLE USING AXIOS
                 </router-link>
