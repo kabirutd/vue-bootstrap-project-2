@@ -2,6 +2,9 @@
   <div class="hello">
     <h1>{{pageTitle}}</h1>
     Contact us page content!
+
+  
+   
   </div>
 </template>
 

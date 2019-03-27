@@ -30,6 +30,8 @@
     <button class="btn btn-primary btn-sm" v-on:click="addTodo()">Push Name</button>&nbsp;
     <br/><br/>
 
+
+
     <table class="table table-striped">
       <thead>
         <tr>
