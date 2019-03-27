@@ -8,7 +8,7 @@ import Contact from './components/Contact.vue'
 import Contacts from './components/Contacts.vue'
 import ContactDetails from './components/ContactDetails.vue'
 import Home from './components/Home.vue'
-import ShippingReport from './Reports/ShippingReport.vue'
+
 import Form from './components/Form.vue'
 //import Misc from './components/Misc.vue'
 import EventModifier from './components/EventModifier.vue'
@@ -23,6 +23,9 @@ import DynamicForm from '@/views/dynamicForm.vue'
 import HttpPost from '@/views/httpPost.vue'
 import GetBlogPosts from '@/views/getBlogPosts.vue'
 import listBlogs from '@/components/listBlogs.vue'
+
+import BntpReport from './Reports/BntpReport.vue'
+import MrbReport from './Reports/MrbReport.vue'
 
 Vue.use(Router)
 
@@ -160,9 +163,14 @@ export default new Router({
         //alias: 'contact-us'
       },
       {
-        path: '/Reports/ShippingReport',
-        name: 'ShippingReport',
-        component: ShippingReport
+        path: '/Reports/MrbReport',
+        name: 'MrbReport',
+        component: MrbReport
+      },
+      {
+        path: '/Reports/BNtpReport',
+        name: 'BNtpReport',
+        component: BntpReport
       }
   ],
 

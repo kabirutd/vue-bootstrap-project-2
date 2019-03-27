@@ -5,7 +5,7 @@
       <div>
   <b-embed type="iframe"
            aspect="16by9"
-           src="https://public.tableau.com/views/LUM_MRB/MRB-DB?iframeSizedToWindow=true&:embed=y&:showAppBanner=true&:display_count=yes&:showVizHome=yes"
+           src="https://public.tableau.com/views/BNTP_REPORT/BNTP-REQS-WEEKLY-DR-DT?iframeSizedToWindow=true&:embed=true&:showAppBanner=true&:display_count=yes&:showVizHome=no"
            height="500px"
            allowfullscreen
   >
@@ -34,7 +34,7 @@ export default {
    
     return {
       //their_name: this.$route.params.name,
-       pageTitle: 'MRB Report'
+       pageTitle: 'BNTP REPORT'
     }
   }
 }

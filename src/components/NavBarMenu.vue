@@ -170,9 +170,16 @@
         </b-nav-item-dropdown>
 
         <b-nav-item-dropdown class="routerLink" text="REPORTS" >
+
+             <b-dropdown-item >
+                <router-link class="routerLink"  to="/Reports/MrbReport">
+                MRB REPORTS
+                </router-link>
+            </b-dropdown-item>
+
             <b-dropdown-item >
-                <router-link class="routerLink"  to="/Reports/ShippingReport">
-                SHIPPING REPORTS
+                <router-link class="routerLink"  to="/Reports/BntpReport">
+                BNTP REPORTS
                 </router-link>
             </b-dropdown-item>
             <b-dropdown-item href="#">ES</b-dropdown-item>
