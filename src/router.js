@@ -26,6 +26,7 @@ import listBlogs from '@/components/listBlogs.vue'
 
 import BntpReport from './Reports/BntpReport.vue'
 import MrbReport from './Reports/MrbReport.vue'
+import SalesReport from './Reports/SalesReport.vue'
 
 Vue.use(Router)
 
@@ -39,6 +40,24 @@ export default new Router({
       component: Home
     },
 
+    {
+      path: '/Reports/MrbReport',
+      name: 'MrbReport',
+      component: MrbReport
+    },
+    {
+      path: '/Reports/BNtpReport',
+      name: 'BNtpReport',
+      component: BntpReport
+    }
+    ,
+
+    {
+      path: '/Reports/SalesReport',
+      name: 'SalesReport',
+      component: SalesReport
+    }
+    ,
     {
       path: '/httppost',
       name: 'http-post',
@@ -162,16 +181,7 @@ export default new Router({
         component: Form
         //alias: 'contact-us'
       },
-      {
-        path: '/Reports/MrbReport',
-        name: 'MrbReport',
-        component: MrbReport
-      },
-      {
-        path: '/Reports/BNtpReport',
-        name: 'BNtpReport',
-        component: BntpReport
-      }
+     
   ],
 
   //scrollBehavior (to, from, savedPosition) {

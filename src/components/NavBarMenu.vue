@@ -28,9 +28,7 @@
 
         <b-nav-item-dropdown text="Lang" right>
             <b-dropdown-item href="#">EN</b-dropdown-item>
-            <b-dropdown-item href="#">ES</b-dropdown-item>
-            <b-dropdown-item href="#">RU</b-dropdown-item>
-            <b-dropdown-item href="#">FA</b-dropdown-item>
+          
         </b-nav-item-dropdown>
 
         <b-nav-item-dropdown right>
@@ -65,12 +63,14 @@
                  <strong>CONTACTS </strong>
             </router-link>          
         </b-nav-item>
+
+        <!--
         <b-nav-item >
         <router-link class="routerLink"  to="/skills">
                  <strong>SKILLS </strong>
             </router-link>          
         </b-nav-item>
-        
+        -->
 
           <b-nav-item >
         <router-link class="routerLink"  to="/form">
@@ -78,18 +78,27 @@
             </router-link>          
         </b-nav-item>
 
-        
+        <!--
           <b-nav-item >
+
+              
         <router-link class="routerLink"  to="/misc">
                  <strong>MISC </strong>
             </router-link>          
         </b-nav-item>
+        -->
 
         <b-nav-item-dropdown class="routerLink" text="VUE EXAMPLES" >
 
             <b-dropdown-item >
                 <router-link class="routerLink"  to="/listblogs">
-                LIST BLOGS USING MIXINS
+                LIST ITEMS USING MIXINS
+                </router-link>
+            </b-dropdown-item>
+
+              <b-dropdown-item >
+                <router-link class="routerLink"  to="/skills">
+                BASIC CRUD USING SIMPLE FORM
                 </router-link>
             </b-dropdown-item>
 
@@ -170,6 +179,12 @@
         </b-nav-item-dropdown>
 
         <b-nav-item-dropdown class="routerLink" text="REPORTS" >
+
+             <b-dropdown-item >
+                <router-link class="routerLink"  to="/Reports/SalesReport">
+                SAMPLE SALES REPORTS
+                </router-link>
+            </b-dropdown-item>
 
              <b-dropdown-item >
                 <router-link class="routerLink"  to="/Reports/MrbReport">
