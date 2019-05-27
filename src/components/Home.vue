@@ -8,8 +8,7 @@
         This is a sample Bootstrap Vue Application that uses bootstrap for styling. This app also
         has a few dynamic pages such as procesing form using basic CRUD, fetching data from api.
         <br>
-        <br>Hosting this dynamic application on Azure Storage for almost no cost using Continuous
-        Integration (CI) and Continuous Delivery (CD). Thanks to the
+        <br>Hosting this dynamic application on Azure Storage for almost no cost. Thanks to the
         power of Vue's SPA and Microsoft's Static website hosting ability on Azure Storage.
         <br>
         <br>Successfully Embedded Tableau Reports in Vue app so now I can Develop Dynamic
