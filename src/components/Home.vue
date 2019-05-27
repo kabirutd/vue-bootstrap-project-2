@@ -5,11 +5,17 @@
     <b-jumbotron>
       <template slot="header">Bootstrap Vue Application</template>
       <template slot="lead">
-        This is a sample Bootstrap Vue Application that uses bootstrap for styling. THis app also
+        This is a sample Bootstrap Vue Application that uses bootstrap for styling. This app also
         has a few dynamic pages such as procesing form using basic CRUD, fetching data from api.
-        .
+        <br>
+        <br>Hosting this dynamic application on Azure Storage for almost no cost using Continuous
+        Integration (CI) and Continuous Delivery (CD). Thanks to the
+        power of Vue's SPA and Microsoft's Static website hosting ability on Azure Storage.
+        <br>
+        <br>Successfully Embedded Tableau Reports in Vue app so now I can Develop Dynamic
+        Full Stack Applications along with very powerful Reporting Dashboard
+        using Vue, React, Restful Web APIs, Tableau, Power BI.
       </template>
-      
     </b-jumbotron>
     <!--<b-jumbotron bg-variant="info" text-variant="white" border-variant="dark">-->
     <!--
