@@ -27,6 +27,7 @@ import listBlogs from '@/components/listBlogs.vue'
 import BntpReport from './Reports/BntpReport.vue'
 import MrbReport from './Reports/MrbReport.vue'
 import SalesReport from './Reports/SalesReport.vue'
+import SalesDashboard from './Reports/SalesDashboard.vue'
 
 Vue.use(Router)
 
@@ -49,6 +50,13 @@ export default new Router({
       path: '/Reports/BNtpReport',
       name: 'BNtpReport',
       component: BntpReport
+    }
+    ,
+
+    {
+      path: '/Reports/SalesDashboard',
+      name: 'SalesDashboard',
+      component: SalesDashboard
     }
     ,
 
