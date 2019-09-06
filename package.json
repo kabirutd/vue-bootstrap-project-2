@@ -10,6 +10,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "bootstrap-vue": "^2.0.0-rc.11",
+    "vee-validate": "^3.0.4",
     "vue": "^2.5.22",
     "vue-axios": "^2.1.4",
     "vue-multiselect": "^2.1.4",
@@ -49,5 +50,17 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ]
+  ],
+  "description": "Demo URL : https://bvbiapp.z13.web.core.windows.net",
+  "main": "babel.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kabirutd/vue-bootstrap-project-2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kabirutd/vue-bootstrap-project-2/issues"
+  },
+  "homepage": "https://github.com/kabirutd/vue-bootstrap-project-2#readme"
 }

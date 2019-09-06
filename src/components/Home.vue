@@ -1,17 +1,17 @@
 <template>
   <div class="container-fluid">
     <!--<h1>{{ msg }} - Jamais</h1>-->
-    <br>
+    <br />
     <b-jumbotron>
-      <template slot="header">Bootstrap Vue Application</template>
+      <template slot="header">Vue Application Using Bootstrap</template>
       <template slot="lead">
-        This is a sample Bootstrap Vue Application that uses bootstrap for styling. This app also
+        This is a sample Vue Application that uses bootstrap for styling. This app also
         has a few dynamic pages such as procesing form using basic CRUD, fetching data from api.
-        <br>
-        <br>Hosting this dynamic application on Azure Storage for almost no cost. Thanks to the
+        <br />
+        <br />Hosting this dynamic application on Azure Storage for almost no cost. Thanks to the
         power of Vue's SPA and Microsoft's Static website hosting ability on Azure Storage.
-        <br>
-        <br>Successfully Embedded Tableau Reports in Vue app so now I can Develop Dynamic
+        <br />
+        <br />Successfully Embedded Tableau Reports in Vue app so now I can Develop Dynamic
         Full Stack Applications along with very powerful Reporting Dashboard
         using Vue, React, Restful Web APIs, Tableau, Power BI.
       </template>
@@ -32,11 +32,14 @@
     </p>
   </b-jumbotron>
     -->
+
+    <!--
     <b-alert show>Default Alert</b-alert>
 
     <div>
       <b-btn v-b-popover.hover="'I am popover content!'" title="Popover Title">Hover Me</b-btn>
     </div>
+    -->
   </div>
 </template>
 
