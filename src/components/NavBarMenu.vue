@@ -100,66 +100,125 @@
           <router-link class="routerLink" to="/httppost">HTTP POST EXAMPLE</router-link>
         </b-dropdown-item>
 
-        <b-dropdown-item>
-          <router-link class="routerLink" to="/dynamicform">DYNAMIC FORM USING SLOT</router-link>
-        </b-dropdown-item>
+        <b-nav-item-dropdown class="routerLink" text="VUE EXAMPLES" >
 
-        <b-dropdown-item>
-          <router-link class="routerLink" to="/dynamiccomponent">DYNAMIC COMPONENT</router-link>
-        </b-dropdown-item>
+            <b-dropdown-item >
+                <router-link class="routerLink"  to="/listblogs">
+                LIST ITEMS USING MIXINS
+                </router-link>
+            </b-dropdown-item>
 
-        <b-dropdown-item>
-          <router-link class="routerLink" to="/contacts">ACCESS WEB API DATA USING AXIOS</router-link>
-        </b-dropdown-item>
+              <b-dropdown-item >
+                <router-link class="routerLink"  to="/skills">
+                BASIC CRUD USING SIMPLE FORM
+                </router-link>
+            </b-dropdown-item>
 
-        <b-dropdown-item>
-          <router-link class="routerLink" to="/eventmodifier">EVENT MODIFIER</router-link>
-        </b-dropdown-item>
+            <b-dropdown-item >
+                <router-link class="routerLink"  to="/getblogposts">
+                HTTP GET EXAMPLE USING AXIOS
+                </router-link>
+            </b-dropdown-item>
 
-        <b-dropdown-item>
-          <router-link class="routerLink" to="/Multiselect">FORM - MULTISELECT</router-link>
-        </b-dropdown-item>
+             <b-dropdown-item >
+                <router-link class="routerLink"  to="/httppost">
+                HTTP POST EXAMPLE
+                </router-link>
+            </b-dropdown-item>
 
-        <b-dropdown-item>
-          <router-link class="routerLink" to="/FormValidation">FORM - VALIDATION</router-link>
-        </b-dropdown-item>
+             <b-dropdown-item >
+                <router-link class="routerLink"  to="/dynamicform">
+                DYNAMIC FORM USING SLOT
+                </router-link>
+            </b-dropdown-item>
 
-        <b-dropdown-item>
-          <router-link class="routerLink" to="/twowaydatabinding">TWO WAY DATA BINDING</router-link>
-        </b-dropdown-item>
+            <b-dropdown-item >
+                <router-link class="routerLink"  to="/dynamiccomponent">
+                DYNAMIC COMPONENT
+                </router-link>
+            </b-dropdown-item>
 
-        <b-dropdown-item>
-          <router-link class="routerLink" to="/ComputedProperty">COMPUTED PROPERTIES</router-link>
-        </b-dropdown-item>
+            <b-dropdown-item >
+                <router-link class="routerLink"  to="/contacts">
+                ACCESS WEB API DATA USING AXIOS
+                </router-link>
+            </b-dropdown-item>
 
-        <b-dropdown-item>
-          <router-link class="routerLink" to="/ListRendering">LIST RENDERING</router-link>
-        </b-dropdown-item>
+            <b-dropdown-item >
+                <router-link class="routerLink"  to="/eventmodifier">
+                EVENT MODIFIER
+                </router-link>
+            </b-dropdown-item>
 
-        <b-dropdown-item>
-          <router-link class="routerLink" to="/Array">ARRAY</router-link>
-        </b-dropdown-item>
-      </b-nav-item-dropdown>
+             <b-dropdown-item >
+                <router-link class="routerLink"  to="/Multiselect">
+                FORM - MULTISELECT
+                </router-link>
+            </b-dropdown-item>
 
-      <b-nav-item-dropdown class="routerLink" text="TABLEAU REPORTS">
-        <b-dropdown-item>
-          <router-link class="routerLink" to="/Reports/SalesReport">SAMPLE SALES REPORTS</router-link>
-        </b-dropdown-item>
+             <b-dropdown-item >
+                <router-link class="routerLink"  to="/FormValidation">
+                FORM - VALIDATION
+                </router-link>
+            </b-dropdown-item>
 
-        <b-dropdown-item>
-          <router-link class="routerLink" to="/Reports/MrbReport">MRB REPORTS</router-link>
-        </b-dropdown-item>
+            <b-dropdown-item >
+                <router-link class="routerLink"  to="/twowaydatabinding">
+                TWO WAY DATA BINDING
+                </router-link>
+            </b-dropdown-item>
 
-        <b-dropdown-item>
-          <router-link class="routerLink" to="/Reports/BntpReport">BNTP REPORTS</router-link>
-        </b-dropdown-item>
+             <b-dropdown-item >
+                <router-link class="routerLink"  to="/ComputedProperty">
+               COMPUTED PROPERTIES
+                </router-link>
+            </b-dropdown-item>
 
-        <!--
-        <b-dropdown-item href="#">ES</b-dropdown-item>
-        <b-dropdown-item href="#">RU</b-dropdown-item>
-        <b-dropdown-item href="#">FA</b-dropdown-item>
-        -->
-      </b-nav-item-dropdown>
+            <b-dropdown-item >
+                <router-link class="routerLink"  to="/ListRendering">
+               LIST RENDERING
+                </router-link>
+            </b-dropdown-item>
+
+            <b-dropdown-item >
+                <router-link class="routerLink"  to="/Array">
+               ARRAY
+                </router-link>
+            </b-dropdown-item>
+
+            
+          
+        </b-nav-item-dropdown>
+
+        <b-nav-item-dropdown class="routerLink" text="REPORTS" >
+
+             <b-dropdown-item >
+                <router-link class="routerLink"  to="/Reports/SalesDashboard">
+                SAMPLE SALES DASHBOARD
+                </router-link>
+            </b-dropdown-item>
+
+             <b-dropdown-item >
+                <router-link class="routerLink"  to="/Reports/SalesReport">
+                SAMPLE SALES REPORTS
+                </router-link>
+            </b-dropdown-item>
+
+             <b-dropdown-item >
+                <router-link class="routerLink"  to="/Reports/MrbReport">
+                MRB REPORTS
+                </router-link>
+            </b-dropdown-item>
+
+            <b-dropdown-item >
+                <router-link class="routerLink"  to="/Reports/BntpReport">
+                BNTP REPORTS
+                </router-link>
+            </b-dropdown-item>
+            <b-dropdown-item href="#">ES</b-dropdown-item>
+            <b-dropdown-item href="#">RU</b-dropdown-item>
+            <b-dropdown-item href="#">FA</b-dropdown-item>
+        </b-nav-item-dropdown>
     </b-nav>
     <router-view />
   </div>

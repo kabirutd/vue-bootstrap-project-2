@@ -5,7 +5,7 @@
       <div>
   <b-embed type="iframe"
            aspect="16by9"
-           src="https://public.tableau.com/views/SampleSalesReport_15537969374100/Overview?iframeSizedToWindow=true&:embed=true&:showAppBanner=true&:display_count=yes&:showVizHome=no"
+           src="https://public.tableau.com/views/LUM_SALES_DASHBOARD/Analysis-KPIPerformance?iframeSizedToWindow=true&:embed=true&:showAppBanner=true&:display_count=yes&:showVizHome=no"
            height="500px"
            allowfullscreen
 
@@ -19,12 +19,12 @@
 
 <script>
 export default {
-  name: 'About',
+  name: 'SalesDashboard',
   data() {
    
     return {
       //their_name: this.$route.params.name,
-       pageTitle: 'SALES REPORT'
+       pageTitle: 'SALES DASHBOARD'
     }
   }
 }
