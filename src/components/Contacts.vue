@@ -1,24 +1,23 @@
 <template>
+  <div class="container-fluid">
+    <br />
 
-<div   class="container-fluid">
-  
-  <br/>
-
-  <b-card title=""
-             header="FETCH DATA FROM AN API USING AXIOS"
-              img-alt="Image"
-              img-top
-              tag="article"
-              style=""
-              class="mb-2">
-        <p class="card-text">
-         This is a sample page that is using axios to fetch data from an api using
-         a bootstrap table layout.
-        </p>
-        <!--<b-button href="#" variant="primary">Go somewhere</b-button>--></b-button>
-      </b-card>
-      <br/>
-
+    <b-card
+      title
+      header="FETCH DATA FROM AN API USING AXIOS"
+      img-alt="Image"
+      img-top
+      tag="article"
+      style
+      class="mb-2"
+    >
+      <p class="card-text">
+        This is a sample page that is using axios to fetch data from an api using
+        a bootstrap table layout.
+      </p>
+      <!--<b-button href="#" variant="primary">Go somewhere</b-button></b-button>-->
+    </b-card>
+    <br />
 
     <!--
 
@@ -27,47 +26,44 @@
                        :data-value-field="'value'"
                        @change="onChange">
   </kendo-dropdownlist>
-  -->
+    -->
 
-      <section v-if="errored">
-        <p>We're sorry, we're not able to retrieve this information at the moment, please try back later</p>
+    <section v-if="errored">
+      <p>We're sorry, we're not able to retrieve this information at the moment, please try back later</p>
     </section>
 
     <section v-else>
-        <div v-if="loading">Loading contacts...</div>
+      <div v-if="loading">Loading contacts...</div>
 
-        <!--
+      <!--
         <div v-else  v-for="(contact, index) in contacts" class="contact" :key="index">
             {{ contact.first_name }} {{ contact.last_name }} 
            
         </div>
-        -->
+      -->
 
-          <table class="table table-striped">
-            <thead>
-              <tr>
-                <th>FIRST NAME</th>
-                <th>EMAIL</th>
-                <th>PHONE</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr v-for="(contact, index) in contacts" :key="index">
-                <td> <router-link :to="{path: '/contactdetails/'+ contact.id }">{{contact.first_name}}</router-link></td>
-                <td>{{contact.email}}</td>
-                <td>{{contact.mobile_phone}}</td>
-              </tr>
-              
-            </tbody>
-          </table>
-
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>FIRST NAME</th>
+            <th>EMAIL</th>
+            <th>PHONE</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="(contact, index) in contacts" :key="index">
+            <td>
+              <router-link :to="{path: '/contactdetails/'+ contact.id }">{{contact.first_name}}</router-link>
+            </td>
+            <td>{{contact.email}}</td>
+            <td>{{contact.mobile_phone}}</td>
+          </tr>
+        </tbody>
+      </table>
     </section>
+  </div>
 
-    
-</div>
-
-
-<!--
+  <!--
 
   <div>
       <b-card title="Card Title"
@@ -90,74 +86,53 @@
          <router-link :to="{path: '/contactdetails/'+ data.id }"><h3>{{data.first_name}} {{data.last_name}}</h3></router-link>
       </div>
   -->
-
-
-
 </template>
 
 
 <script>
-
-import axios from 'axios';
+import axios from "axios";
 
 export default {
+  name: "Contacts",
 
-name: 'Contacts',
-
-methods:{
-
-   onChange: function() {
+  methods: {
+    onChange: function() {
       //this.m2 = problem[e.sender.value()];
     }
-
   },
 
-  
-
-data()
-{
-    
-    return{
-    
-    //info: null,
-    loading: true,
-    errored: false,
-    contacts: []
-    //m2: problem[0],
-    /*
+  data() {
+    return {
+      //info: null,
+      loading: true,
+      errored: false,
+      contacts: []
+      //m2: problem[0],
+      /*
     singerOptions: [
       { text: option[0], value: '0' },
       { text: option[1], value: '1' }
     ]
     */
-       
-    
-    }
-    
-    
-}, //DATA
+    };
+  }, //DATA
 
- mounted () {
-   axios
-      .get('https://api.myjson.com/bins/eitho')
+  mounted() {
+    axios
+      .get("https://api.myjson.com/bins/eitho")
       .then(response => {
-        this.contacts = response.data
+        this.contacts = response.data;
       })
-    /*
+      /*
       .catch(error => {
        console.log(error)
         this.errored = true
       })  
-      */    
-      
-      .finally(() => this.loading = false)
+      */
 
-  }, //MOUNTED
-    
-    
-    }
-
-
+      .finally(() => (this.loading = false));
+  } //MOUNTED
+};
 </script>
 
 
@@ -166,7 +141,4 @@ data()
 
 
 <style>
-
-   
-
 </style>

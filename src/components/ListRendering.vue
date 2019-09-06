@@ -1,36 +1,34 @@
 <template>
   <div class="container-fluid">
-    <h4>{{headertitle}}</h4>
-    <br>
+    <br />
+    <h4 class="prettymainheader">{{headertitle}}</h4>
+    <br />
 
-    <h5>Simple v-for</h5>
+    <h5 class="prettyheader">Simple v-for</h5>
+
     <ul id="example-1">
       <li v-for="item in items" :key="item.message">{{ item.message }}</li>
     </ul>
 
-    <br>
+    <br />
+    <br />
 
-    <h5>v-for with one item Object  using key and index</h5>
+    <h5 class="prettyheader">v-for with one item Object using key and index</h5>
 
     <ul id="v-for-object" class="demo">
-      <li v-for="(value,key,index) in object" :key="value.id">
-        
-         {{index}}. {{key}}: {{ value }}
-        
-        </li>
+      <li v-for="(value,key,index) in object" :key="value.id">{{index}}. {{key}}: {{ value }}</li>
     </ul>
-    
-    
-  <!--<h5>v-for with Multiple Items Object rendered in a table</h5>-->
 
-  
-     <h5>Simple Todo List with Add and Delete Option</h5>
+    <!--<h5>v-for with Multiple Items Object rendered in a table</h5>-->
 
-      <input type="text" id="" placeholder="i.e Do homwwork"  v-model="todoitem"/> &nbsp;
-    <button class="btn btn-primary btn-sm" v-on:click="addTodo()">Push Name</button>&nbsp;
-    <br/><br/>
+    <h5 class="prettyheader">Simple Todo List with Add and Delete Option</h5>
 
-
+    <input type="text" id="input1" size="5" placeholder="i.e Do homwwork" v-model="todoitem" />
+    &nbsp;
+    <br />
+    <button class="btn btn-primary btn-sm" v-on:click="addTodo()">ADD TODO ITEM</button>&nbsp;
+    <br />
+    <br />
 
     <table class="table table-striped">
       <thead>
@@ -38,20 +36,23 @@
           <th>ID</th>
           <th>Title</th>
           <th></th>
-       
         </tr>
       </thead>
       <tbody>
         <tr v-for="(todo,index) in todos" :key="todo.id">
           <td>{{todo.id}}</td>
           <td>{{todo.title}}</td>
-          <td><button class="btn btn-primary btn-sm" @click="deleteTodo(index)">REMOVE</button></td>
-        
+          <td>
+            <button class="btn btn-primary btn-sm" @click="deleteTodo(index)">REMOVE</button>
+          </td>
         </tr>
       </tbody>
     </table>
 
-    <br/>
+    <br />
+    <br />
+    <h5 class="prettyheader">POPULATE A TABLE WITH DYNAMIC USER LIST</h5>
+
     <table class="table table-striped">
       <thead>
         <tr>
@@ -71,25 +72,22 @@
       </tbody>
     </table>
 
-    <br/>
-    <h5>v-for with Multiple Items Object</h5>
-    
+    <br />
+    <br />
+    <h5 class="prettyheader">v-for with Multiple Items Object</h5>
+
     <ul id="v-for-object" class="demo">
       <li v-for="(user, key) in users" :key="key">
         {{ user.id }}
-        <br>
+        <br />
         {{ user.firstName }}
-        <br>
+        <br />
         {{ user.lastName }}
-        <br>
-         {{ user.age }}
-        <br>
+        <br />
+        {{ user.age }}
+        <br />
       </li>
     </ul>
-
-   
-
-
   </div>
 </template>
 
@@ -107,26 +105,19 @@ export default {
         .join("");
     }
   },
-  methods:{
-    addTodo: function()
-    {
-      this.todos.push(
-        {
-          id: this.nextTodoId++,
-          title: this.todoitem
-
-        }
-
-      )
-      this.todoitem=''
+  methods: {
+    addTodo: function() {
+      this.todos.push({
+        id: this.nextTodoId++,
+        title: this.todoitem
+      });
+      this.todoitem = "";
     },
 
-     deleteTodo: function(index)
-    {
-      this.$delete(this.todos, index)
+    deleteTodo: function(index) {
+      this.$delete(this.todos, index);
       //this.todos.$remove
       //this.items.splice(index, 1);
-      
     }
   },
   data() {
@@ -134,7 +125,7 @@ export default {
       their_name: this.$route.params.name,
       headertitle: "VUE - LIST RENDERING",
       message: "Hello",
-      todoitem: '',
+      todoitem: "",
       items: [{ message: "Foo" }, { message: "Bar" }],
 
       object: {
@@ -145,10 +136,9 @@ export default {
       },
 
       todos: [
-        {id:1, title: "Take Trash out.."},
-        {id:2, title: "Drive home.."},
-        {id:3, title: "Play hoops.."}
-
+        { id: 1, title: "Take Trash out.." },
+        { id: 2, title: "Drive home.." },
+        { id: 3, title: "Play hoops.." }
       ],
 
       nextTodoId: 4,
@@ -179,3 +169,11 @@ export default {
   //}
 };
 </script>
+<style scoped>
+.prettyheader {
+  color: deepskyblue;
+}
+.prettymainheader {
+  color: green;
+}
+</style>
