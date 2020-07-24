@@ -28,6 +28,7 @@ import BntpReport from './Reports/BntpReport.vue'
 import MrbReport from './Reports/MrbReport.vue'
 import SalesReport from './Reports/SalesReport.vue'
 import SalesDashboard from './Reports/SalesDashboard.vue'
+import SanabilDonationDashboard from './Reports/SanabilDonationDashboard.vue'
 
 Vue.use(Router)
 
@@ -66,6 +67,15 @@ export default new Router({
       component: SalesReport
     }
     ,
+    
+     {
+      path: '/Reports/SanabilDonationDashboard',
+      name: 'SanabilDonationDashboard',
+      component: SanabilDonationDashboard
+    }
+    ,
+    
+   
     {
       path: '/httppost',
       name: 'http-post',
