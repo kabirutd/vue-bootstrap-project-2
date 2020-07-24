@@ -159,6 +159,10 @@
       </b-nav-item-dropdown>
 
       <b-nav-item-dropdown class="routerLink" text="REPORTS">
+      
+       <b-dropdown-item>
+          <router-link class="routerLink" to="/Reports/SanabilDonationDashboard">Sanabil Donation Dashboard</router-link>
+        </b-dropdown-item>
         <b-dropdown-item>
           <router-link class="routerLink" to="/Reports/SalesDashboard">SAMPLE SALES DASHBOARD</router-link>
         </b-dropdown-item>
