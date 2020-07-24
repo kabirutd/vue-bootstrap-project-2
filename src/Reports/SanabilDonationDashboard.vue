@@ -24,7 +24,7 @@ export default {
    
     return {
       //their_name: this.$route.params.name,
-       pageTitle: 'SALES REPORT'
+       pageTitle: 'SANABIL DONATION DASHBOARD'
     }
   }
 }
